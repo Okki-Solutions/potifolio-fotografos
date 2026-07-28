@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumière Studio · Fotografia de Luxo</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">Lumière</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-media" aria-hidden="true">
+            <img class="hero-image hero-image--active" src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=2000&auto=format&fit=crop" alt="Cena de luxo em luz natural" />
+            <img class="hero-image" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2000&auto=format&fit=crop" alt="Estilo elegante e sofisticado" />
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">Fotografia de autor</span>
+            <h1>Capturamos a <br /><span class="gold">essência</span> do luxo</h1>
+            <p>Cada clique conta uma história única. Transformamos momentos em arte atemporal.</p>
+            <a href="#galeria" class="btn-primary">Explore o portfólio</a>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="sobre-grid">
+                <div class="sobre-imagem">
+                    <img src="https://images.unsplash.com/photo-1584047991171-0e4f1f7f6ff9?q=80&w=1974&auto=format&fit=crop" alt="Fotógrafo profissional" />
+                </div>
+                <div class="sobre-texto">
+                    <span class="tag">Quem somos</span>
+                    <h2>Arte, técnica e <span class="gold">paixão</span></h2>
+                    <p>
+                        Com mais de uma década de experiência, a Lumière Studio é sinônimo de
+                        excelência em fotografia de luxo. Cada imagem é meticulosamente
+                        planejada e executada para traduzir a beleza e a emoção de cada
+                        instante.
+                    </p>
+                    <p>
+                        Trabalhamos com as melhores luzes, equipamentos e um olhar único
+                        que transforma o ordinário em extraordinário.
+                    </p>
+                    <div class="sobre-stats">
+                        <div>
+                            <span class="stat-number">+12</span>
+                            <span class="stat-label">anos de experiência</span>
+                        </div>
+                        <div>
+                            <span class="stat-number">+500</span>
+                            <span class="stat-label">sessões realizadas</span>
+                        </div>
+                        <div>
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">clientes satisfeitos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALERIA ===== -->
+    <section class="galeria" id="galeria">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">Portfólio</span>
+                <h2>Obras <span class="gold">recentes</span></h2>
+                <p>Uma seleção das nossas imagens mais marcantes — clique para expandir.</p>
+            </div>
+
+            <div class="galeria-grid" id="galeriaGrid">
+                <!-- As imagens serão inseridas via JavaScript -->
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <span class="lightbox-fechar">&times;</span>
+            <img class="lightbox-imagem" id="lightboxImg" src="" alt="Ampliação" />
+            <span class="lightbox-legenda" id="lightboxLegenda"></span>
+        </div>
+    </section>
+
+    <!-- ===== DEPOIMENTOS ===== -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">Depoimentos</span>
+                <h2>O que nossos <span class="gold">clientes</span> dizem</h2>
+            </div>
+
+            <div class="depoimentos-grid" id="depoimentosGrid">
+                <!-- Inserido via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTATO / RODAPÉ ===== -->
+    <footer id="contato">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <div class="logo">
+                    <span class="logo-icon">✦</span>
+                    <span class="logo-text">Lumière</span>
+                </div>
+                <p>Fotografia de luxo que transcende o tempo.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Pinterest">📌</a>
+                    <a href="#" aria-label="Vimeo">▶</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <p><strong>E-mail:</strong> contato@lumiere.studio</p>
+                <p><strong>Telefone:</strong> +55 (11) 99999-9999</p>
+                <p><strong>Endereço:</strong> São Paulo, SP</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="privacidade.html">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Usaremos seu e-mail exclusivamente para enviar novidades e inspirações do Lumière Studio.</p>
+                <form id="newsletterForm">
+                    <label class="sr-only" for="newsletterEmail">Seu e-mail</label>
+                    <input id="newsletterEmail" name="email" type="email" placeholder="Seu e-mail" autocomplete="email" required />
+                    <label class="consentimento" for="consentimentoNewsletter">
+                        <input id="consentimentoNewsletter" name="consentimento" type="checkbox" required />
+                        <span>Li e concordo com o uso do meu e-mail para receber a newsletter, conforme a <a href="privacidade.html">Política de Privacidade</a>. Posso cancelar a qualquer momento.</span>
+                    </label>
+                    <button type="submit">Assinar</button>
+                </form>
+                <p class="newsletter-privacidade">Você pode <a href="privacidade.html#descadastro">cancelar o recebimento</a> quando quiser.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Lumière Studio · Todos os direitos reservados.</p>
+                <a class="privacy-link" href="privacidade.html">Privacidade e proteção de dados</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT EXTERNO ===== -->
+    <script src="script.js"></script>
+    <script type="module">
+        import '@n8n/chat/style.css';
+        import { createChat } from '@n8n/chat';
+
+        createChat({
+            webhookUrl: 'https://miguelpellatiero.app.n8n.cloud/webhook/6a042c2c-acdc-4c90-9df6-ab4e2f6c5764/chat',
+            mode: 'window',
+            showWelcomeScreen: false,
+            initialMessages: [
+                'Olá! 👋 Sou o assistente virtual do estúdio.',
+                'Posso te ajudar com informações sobre ensaios, pacotes, disponibilidade de datas e orçamentos.'
+            ],
+            i18n: {
+                en: {
+                    title: 'Estúdio Fotográfico',
+                    subtitle: 'Atendimento 24/7 — tire suas dúvidas sobre ensaios e pacotes.',
+                    inputPlaceholder: 'Digite sua mensagem...',
+                    getStarted: 'Nova conversa',
+                    footer: '',
+                    closeButtonTooltip: 'Fechar'
+                }
+            }
+        });
+    </script>
+</body>
+</html>

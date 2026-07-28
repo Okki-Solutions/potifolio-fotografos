@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Política de Privacidade do Lumière Studio." />
+    <title>Política de Privacidade · Lumière Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a class="logo" href="index.html" aria-label="Lumière Studio — página inicial"><span class="logo-icon">✦</span><span class="logo-text">Lumière</span></a>
+            <a class="back-link" href="index.html">← Voltar ao site</a>
+        </div>
+    </header>
+
+    <main class="privacy-page">
+        <article class="container privacy-content">
+            <span class="tag">Privacidade</span>
+            <h1>Política de <span class="gold">Privacidade</span></h1>
+            <p class="privacy-intro">Esta política explica, de forma clara, como o Lumière Studio trata dados pessoais em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018).</p>
+            <p class="privacy-date">Última atualização: 28 de julho de 2026.</p>
+
+            <section>
+                <h2>1. Quem é responsável pelos dados</h2>
+                <p>O Lumière Studio é o controlador dos dados pessoais coletados neste site. Para dúvidas, solicitações ou exercício dos seus direitos, escreva para <a href="mailto:privacidade@lumiere.studio">privacidade@lumiere.studio</a>.</p>
+            </section>
+
+            <section>
+                <h2>2. Quais dados coletamos e para quê</h2>
+                <p>Na newsletter, coletamos seu endereço de e-mail somente para enviar novidades, inspirações e comunicações relacionadas aos serviços do Lumière Studio. O fornecimento é opcional e o consentimento é solicitado de forma separada antes da inscrição.</p>
+                <p>Não usamos seus dados para finalidades incompatíveis com as informadas, nem vendemos ou alugamos dados pessoais.</p>
+            </section>
+
+            <section>
+                <h2>3. Base legal e compartilhamento</h2>
+                <p>O envio da newsletter é realizado com base no seu consentimento, que pode ser revogado a qualquer tempo. Se utilizarmos fornecedores técnicos para hospedar o site ou enviar e-mails, eles só poderão tratar os dados conforme nossas instruções e para essa finalidade.</p>
+            </section>
+
+            <section>
+                <h2>4. Retenção e segurança</h2>
+                <p>Manteremos seu e-mail enquanto você desejar receber a newsletter ou pelo período necessário para cumprir obrigações legais. Adotamos medidas técnicas e organizacionais adequadas para proteger os dados contra acesso não autorizado, perda ou uso indevido.</p>
+            </section>
+
+            <section>
+                <h2>5. Seus direitos</h2>
+                <p>Nos termos da LGPD, você pode solicitar confirmação de tratamento, acesso, correção, anonimização, bloqueio, eliminação, portabilidade e informações sobre compartilhamentos, além de revogar seu consentimento. Para isso, entre em contato pelo e-mail indicado nesta página.</p>
+            </section>
+
+            <section id="descadastro" class="unsubscribe-box">
+                <h2>6. Descadastro da newsletter</h2>
+                <p>Você pode deixar de receber nossas mensagens a qualquer momento. Envie uma solicitação de descadastro pelo botão abaixo, usando o mesmo e-mail cadastrado. Processaremos o pedido sem custo.</p>
+                <a class="btn-primary" href="mailto:privacidade@lumiere.studio?subject=Solicita%C3%A7%C3%A3o%20de%20descadastro%20da%20newsletter">Solicitar descadastro</a>
+            </section>
+
+            <section>
+                <h2>7. Atualizações desta política</h2>
+                <p>Esta política poderá ser atualizada para refletir mudanças em nossas práticas ou na legislação. A versão vigente estará sempre disponível nesta página.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer class="privacy-footer">
+        <div class="container footer-bottom"><p>© 2026 Lumière Studio · <a href="index.html">Voltar ao site</a></p></div>
+    </footer>
+
+    <script type="module">
+        import '@n8n/chat/style.css';
+        import { createChat } from '@n8n/chat';
+
+        createChat({
+            webhookUrl: 'https://miguelpellatiero.app.n8n.cloud/webhook/6a042c2c-acdc-4c90-9df6-ab4e2f6c5764/chat',
+            mode: 'window',
+            showWelcomeScreen: false,
+            initialMessages: [
+                'Olá! 👋 Sou o assistente virtual do estúdio.',
+                'Posso te ajudar com informações sobre ensaios, pacotes, disponibilidade de datas e orçamentos.'
+            ],
+            i18n: {
+                en: {
+                    title: 'Estúdio Fotográfico',
+                    subtitle: 'Atendimento 24/7 — tire suas dúvidas sobre ensaios e pacotes.',
+                    inputPlaceholder: 'Digite sua mensagem...',
+                    getStarted: 'Nova conversa',
+                    footer: '',
+                    closeButtonTooltip: 'Fechar'
+                }
+            }
+        });
+    </script>
+</body>
+</html>
